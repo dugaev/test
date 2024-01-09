@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { CiLogin } from "react-icons/ci";
 import { FaPlus } from "react-icons/fa";
 import Modal from './Modal';
+import logoImg from '../assets/logo2.png'
 
 const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -22,11 +23,12 @@ const Header = () => {
 
   return (
     <div className='p-2 bg-slate-700 flex justify-center flex-row border-b-blue-500 border-b-4'>
-      <p className='border rounded-full pt-5 bg-white p-3'>LOGO</p>
+      {/* <p className='border rounded-full pt-5 bg-white p-3'>LOGO</p> */}
+      <img src={logoImg} alt="logoImage" className='rounded-lg h-[70px] w-[90px]' />
       <div className=' flex flex-row justify-between gap-[400px] p-3 '>
         <p className='text-gray-400 w-fit  pl-2 text-[14px]'>Портал оренди та прокату <br /> товарів та послуг</p>
         <div className='flex flex-row gap-[20px]'>
-          <button className='flex flex-row gap-[5px] text-white rounded-full p-2 pl-5 pr-5 text-[13px] bg-orange-500' onClick={handleOpenModal}>
+          <button className='flex flex-row gap-[5px] pt-[12px] text-white rounded-full  px-5 text-[13px] bg-orange-500' onClick={handleOpenModal}>
             Здати в оренду 
             <FaPlus className='mt-[5px]'/> 
           </button>
