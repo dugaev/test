@@ -11,7 +11,7 @@ const RatingStars = () => {
   };
 
   return (
-    <div className="flex flex-col mt-9">
+    <div className="flex flex-col mt-9 mb-6">
       <h2 className="text-blue-400 uppercase">Пункт видачі</h2>
       <div className="flex items-center mt-2 px-2">
         <input type="checkbox" id="gupCheckbox" className="mr-2" />

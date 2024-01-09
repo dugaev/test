@@ -1,22 +1,22 @@
 import React, { useState } from 'react'
 import { CiLogin } from "react-icons/ci";
 import { FaPlus } from "react-icons/fa";
-import Modal from './Modal'; // Імпортуємо компонент модального вікна
+import Modal from './Modal';
 
 const Header = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false); // Стан для відстеження відображення модального вікна
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState({});
 
   const handleOpenModal = () => {
-    setIsModalOpen(true); // Функція для відкриття модального вікна
+    setIsModalOpen(true); 
   };
 
   const handleCloseModal = () => {
-    setIsModalOpen(false); // Функція для закриття модального вікна
+    setIsModalOpen(false);
   };
 
   const handleSubmitModal = (data) => {
-    setFormData(data); // Оновлюємо дані, отримані з модального вікна
+    setFormData(data);
     setIsModalOpen(false);
   };
 

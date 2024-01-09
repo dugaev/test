@@ -18,8 +18,8 @@ const Main = () => {
     setShowModal(false);
   };
   const handleFormSubmit = (formData) => {
-    setSelectedApartment(formData); // Оновлення selectedApartment з новими даними
-    setShowModal(false); // Закриття модального вікна
+    setSelectedApartment(formData); 
+    setShowModal(false); 
   };
   
 
